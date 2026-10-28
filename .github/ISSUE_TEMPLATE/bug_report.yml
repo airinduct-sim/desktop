@@ -1,0 +1,66 @@
+name: Bug report
+description: Something in the desktop app doesn't work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please don't include passwords, tokens or customer data.
+        Security issues: email info@airinductsim.com instead (see SECURITY.md).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Click …
+        3. See …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: AirInduct Sim → About (macOS) or Help → About (Windows, Linux).
+      placeholder: 0.2.0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Windows 11
+        - Windows 10
+        - Linux (AppImage)
+        - Linux (.deb)
+        - Linux (.rpm)
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: macOS 15.2, Windows 11 24H2, Ubuntu 24.04 …
+  - type: dropdown
+    id: web
+    attributes:
+      label: Does the same thing happen at app.airinductsim.com in a browser?
+      options:
+        - "Not checked"
+        - "Yes, it also happens in the browser"
+        - "No, only in the desktop app"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
+      description: Drag images here.

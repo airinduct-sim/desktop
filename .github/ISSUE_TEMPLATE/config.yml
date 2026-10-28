@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email support
+    url: mailto:info@airinductsim.com
+    about: Account, billing or anything you'd rather not post publicly.
+  - name: Report a security issue
+    url: https://github.com/airinduct-sim/desktop/blob/main/SECURITY.md
+    about: Please report security issues privately, not as an issue.
+  - name: AirInduct Sim website
+    url: https://airinductsim.com
+    about: Documentation, pricing and the web app.

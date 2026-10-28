@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest something for the desktop app or AirInduct Sim.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The task or design problem, and what gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: How you'd like it to work. Mock-ups and examples welcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Desktop app (window, menus, files, updates)
+        - Coil simulation
+        - Optimizer / link designer
+        - Rectifier, thermal, ferrite, exposure or other tools
+        - Exports
+        - Something else
